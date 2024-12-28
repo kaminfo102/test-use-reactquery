@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { CategoryListWithProvider } from '../components/CategoryListWithProvider';
+---
+
+<Layout title="Categories">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">دسته‌بندی‌های آزمون</h1>
+    <CategoryListWithProvider client:load />
+  </main>
+</Layout>
